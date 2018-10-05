@@ -1,5 +1,6 @@
 package com.simarro.practica.jewishbank;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -23,5 +24,10 @@ public class PostLogin extends AppCompatActivity {
 
     public void cerrar(View view) {
         this.finish();
+    }
+
+    public void abrirContrasenya(View view) {
+        Intent intento=new Intent(this.getBaseContext(),cambiarContrasenya.class);
+        startActivity(intento);
     }
 }
