@@ -6,4 +6,7 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorDanger">#ff4136</color>
     <color name="colorDangerLight">#ff645b</color>
+    <color name="colorGold">#ffd700</color>
+    <color name="colorDarculaMediumGray">#474444</color>
+    <color name="colorDarculaLightGray">#676565</color>
 </resources>

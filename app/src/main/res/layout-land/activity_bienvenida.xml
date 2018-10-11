@@ -68,10 +68,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
             android:layout_marginTop="0dp"
+            android:layout_marginRight="50dp"
             android:layout_weight="0"
-            android:background="@color/colorPrimary"
+            android:background="@color/colorGold"
             android:padding="0dp"
             android:text="Login"
             android:textColor="@android:color/white" />
@@ -83,7 +83,7 @@
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
             android:layout_weight="0"
-            android:background="@color/colorPrimaryDark"
+            android:background="@color/colorDarculaLightGray"
             android:text="Register"
             android:textColor="@android:color/white" />
     </LinearLayout>

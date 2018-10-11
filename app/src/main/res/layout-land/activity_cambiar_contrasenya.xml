@@ -14,10 +14,10 @@
         android:id="@+id/imageButton2"
         android:layout_width="0dp"
         android:layout_height="78dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:background="@android:color/holo_red_light"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorDarculaMediumGray"
+        android:tint="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
@@ -29,10 +29,9 @@
         android:id="@+id/imageButton3"
         android:layout_width="0dp"
         android:layout_height="78dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:background="@color/colorSecondary"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorGold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,11 +42,9 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="216dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_height="193dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,7 +57,7 @@
             android:id="@+id/contrasenyaVieja"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:text="Contraseña Vieja"
             tools:text="Contraseña Vieja" />
 
         <EditText
@@ -92,7 +89,7 @@
         <EditText
             android:id="@+id/textnueva2"
             android:layout_width="match_parent"
-            android:layout_height="58dp"
+            android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPassword" />
 

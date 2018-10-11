@@ -4,9 +4,10 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
-public class PostLogin extends AppCompatActivity {
+public class PostLogin extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,9 @@ public class PostLogin extends AppCompatActivity {
 
         tv.setText(nombre);
         tv2.setText(pass);
+        Button btn=findViewById(R.id.cambiarClave);
+        btn.setOnClickListener(this);
+
 
     }
 
@@ -26,7 +30,9 @@ public class PostLogin extends AppCompatActivity {
         this.finish();
     }
 
-    public void abrirContrasenya(View view) {
+
+    @Override
+    public void onClick(View v) {
         Intent intento=new Intent(this.getBaseContext(),cambiarContrasenya.class);
         startActivity(intento);
     }
