@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".Login" />
         <activity android:name=".PostLogin" />
-        <activity android:name=".cambiarContrasenya"></activity>
+        <activity android:name=".cambiarContrasenya" />
+        <activity android:name=".Transferencias"></activity>
     </application>
 
 </manifest>

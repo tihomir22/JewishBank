@@ -21,8 +21,9 @@ public class PostLogin extends AppCompatActivity implements View.OnClickListener
         tv.setText(nombre);
         tv2.setText(pass);
         Button btn=findViewById(R.id.cambiarClave);
+        Button btn2=findViewById(R.id.transferen);
         btn.setOnClickListener(this);
-
+        btn2.setOnClickListener(this);
 
     }
 
@@ -33,7 +34,16 @@ public class PostLogin extends AppCompatActivity implements View.OnClickListener
 
     @Override
     public void onClick(View v) {
-        Intent intento=new Intent(this.getBaseContext(),cambiarContrasenya.class);
-        startActivity(intento);
+
+
+        if(v.getTag().toString().equalsIgnoreCase("cambiarClaveTag")) {
+            Intent intento = new Intent(this.getBaseContext(), cambiarContrasenya.class);
+            startActivity(intento);
+        }
+
+        if(v.getTag().toString().equalsIgnoreCase("transferenTag")) {
+            Intent intento = new Intent(this.getBaseContext(), Transferencias.class);
+            startActivity(intento);
+        }
     }
 }
