@@ -88,7 +88,16 @@
             android:textColor="@android:color/background_light" />
 
         <Button
-            android:id="@+id/btnSalir"
+            android:id="@+id/registrobtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorDarculaLightGray"
+            android:onClick="salir"
+            android:text="Registro"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/btnSalir2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorDarculaMediumGray"

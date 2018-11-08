@@ -7,15 +7,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class Login extends AppCompatActivity {
-
+public class Login extends AppCompatActivity implements View.OnClickListener {
+    Button botonRegistro=null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        botonRegistro=findViewById(R.id.registrobtn);
+        botonRegistro.setOnClickListener(this);
     }
 
     public void logearse(View view) {
@@ -48,5 +51,14 @@ public class Login extends AppCompatActivity {
 
     public void salir(View view) {
         finish();
+    }
+
+    @Override
+    public void onClick(View v) {
+        if(v.getId()==this.botonRegistro.getId()){
+            Intent intento=new Intent(this.getBaseContext(),RegistroActivity.class);
+            startActivity(intento);
+
+        }
     }
 }
